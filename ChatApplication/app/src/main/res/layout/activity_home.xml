@@ -1,39 +1,53 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="compsat.chatapplication.Login_Session2.Home">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="compsat.chatapplication.Fragment_Session3.HomeFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <Button
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="HOME"
-        android:id="@+id/textView3"
+        android:text="VIEW PROFILE"
+        android:id="@+id/viewProfile"
+        android:layout_marginTop="16dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/editProfile" />
 
-    <TextView
-        android:layout_width="wrap_content"
+    <Button
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Large Text"
-        android:id="@+id/username"
-        android:layout_marginTop="88dp"
-        android:layout_below="@+id/textView3"
-        android:layout_centerHorizontal="true" />
+        android:text="EDIT PROFILE"
+        android:layout_marginTop="16dp"
+        android:id="@+id/editProfile"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Welcome,"
-        android:id="@+id/textView4"
-        android:layout_alignBottom="@+id/username"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="35dp" />
+    <!--<Button-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CHAT"-->
+        <!--android:id="@+id/chat"-->
+        <!--android:layout_below="@+id/viewProfile"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_toStartOf="@+id/editProfile" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="HOME"-->
+        <!--android:id="@+id/home"-->
+        <!--android:layout_below="@+id/editProfile"-->
+        <!--android:layout_alignParentEnd="true" />-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mainFrame"
+        android:layout_below="@+id/chat"
+        android:layout_toStartOf="@+id/home"
+        android:layout_alignParentEnd="true"></FrameLayout>
+
+
 </RelativeLayout>
